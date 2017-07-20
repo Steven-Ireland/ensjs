@@ -546,4 +546,10 @@ ENS.prototype.setSubnodeOwner = function(name, addr, params) {
     });
 }
 
+ENS.prototype.invalidateName = function(name, params) {
+    this.registryPromise.then(function(registry) {
+      return registry.invalidateNameAsync(name, params);
+    });
+}
+
 module.exports = ENS;
