@@ -106,7 +106,20 @@ var registryInterface = [
     "name": "setOwner",
     "outputs": [],
     "type": "function"
-  }
+  },
+  {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "unhashedName",
+                "type": "string"
+            }
+        ],
+        "name": "invalidateName",
+        "outputs": [],
+        "payable": false,
+        "type": "function"
+    },
 ];
 
 var resolverInterface = [
